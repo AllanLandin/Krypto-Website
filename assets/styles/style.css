@@ -89,7 +89,7 @@ body{
 .global-container{
     max-width: 900px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto ;
     height: 100vh;
 }
 
@@ -107,6 +107,9 @@ header{
 .nav-item{
     padding: 5px 10px;
     transition: var(--trans-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 2px;
 }
@@ -307,8 +310,6 @@ header{
 footer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
 }
 
 
@@ -369,4 +370,89 @@ footer{
 
 .links-block .body-text:hover{
     color: var(--action-color);
+}
+
+@media (max-width: 900px){
+    .sections{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .f-sec-img{
+        display: none;
+    }
+    .f-section-btn-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .fourth-content-image{
+        order: -1;
+        margin: 0 auto;
+    }
+    .global-container{
+        padding: 12px;
+        margin-bottom: 100px;
+    }
+    .featured-logos-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        justify-content: center;
+    }
+    .featured-logos-container img:not(img:nth-child(1)){
+        padding: 10px 0px;
+    }
+    .featured-logos-container img:nth-child(even){
+        background-color: var(--primary-color);
+        width: 100%;
+    }    
+    .links-container, .news-letter-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .news-letter-container{
+        padding-bottom: 50px;
+    }
+    .links-inside-block{
+        flex-direction: row;
+    }
+    .main-link{
+        color: var(--action-color);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .content-images{
+        width: 300px;
+    }
+    header{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-list{
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        width: 90vw;
+        gap: 10px;
+    }
+    .nav-item{
+        width: 100%;
+        padding: 10px;
+    }
+    .nav-item:hover{
+        transform: none
+    }
 }
