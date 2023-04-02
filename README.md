@@ -1,2 +1,2 @@
 # Krypto-Website
-Click [HERE](https://allanlandin.github.io/Krypto-Website/) to see
+Veja o site clicando [AQUI!](https://allanlandin.github.io/Krypto-Website/)
